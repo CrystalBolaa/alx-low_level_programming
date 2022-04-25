@@ -2,22 +2,22 @@
 /**
  * reverse_array - reverses the content of an array
  * of integers.
- * @a: array.
- * @n: number of elements of the array.
+ * @c: array.
+ * @m: number of elements of the array.
  * Return: no return.
  */
 
-void reverse_array(int *a, int n)
+void reverse_array(int *c, int m)
 {
-	int i, r, temp;
+	int x, g, temp;
 
-	for (i = 0; i < n - 1; i++)
+	for (x = 0; x < m - 1; x++)
 	{
-		for (r = i + 1; r > 0; r--) you
+		for (g = x + 1; g > 0; g--)
 		{
-			temp = *(a + r);
-			*(a + r) = *(a + (r - 1));
-			*(a + (r - 1)) = temp;
+			temp = *(c + g);
+			*(c + g) = *(c + (g - 1));
+			*(c + (g - 1)) = temp;
 		}
 	}
 }
