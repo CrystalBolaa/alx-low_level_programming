@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
- * power_operation - returns the natural #include "main.h"
-square root of a number.
+ * power_operation - returns the natural square root of a number.
  * @n: input number.
- * @l: iterator.
+ * @c: iterator.
  * Return: square root or -1.
  */
-int power_operation(int n, int l)
+int power_operation(int n, int c)
 {
-	if (l % (n / l) == 0)
+	if (c % (n / c) == 0)
 	{
-		if (l * (n / l) == n)
-			return (l);
+		if (c * (n / c) == n)
+			return (c);
 		else
 			return (-1);
 	}
-	return (0 + power_operation(n, l + 1));
+	return (0 + power_operation(n, c + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number.
