@@ -1,5 +1,3 @@
-3-main.c
-
 #include "3-calc.h"
 
 /**
