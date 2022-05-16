@@ -99,7 +99,7 @@ void print_all(const char * const format, ...)
 	{
 		m = 0;
 
-		while (m < 4 && (*(format + i) != *(funcs[j].symbol)))
+		while (m < 4 && (*(format + i) != *(funcs[m].symbol)))
 			m++;
 
 		if (m < 4)
