@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp https://github.com/CrystalBolaa/alx-low_level_programming/raw/master/0x18-dynamic_libraries/nrandom.so
-export LD_PRELOAD=/tmp/nrandom.so
+gcc *.o -fPIC -shared -o libruin.so
+LD_PRELOAD=$PWD/libruin.so
